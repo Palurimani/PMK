@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>NAVIGATION</title>
+    <style>
+        body:before {
+            content: "";
+            position:absolute;
+            inset: 40% -60% 0 -60%;
+            opacity: 1%;
+            pointer-events:stroke;
+        
+        }
+        button {
+            border-radius: 28px;
+        }
+        nav {
+            position: relative;
+            z-index: 1;
+            -webkit-text-fill-color: rgb(31, 140, 49);
+            background-color: brown;
+
+            
+        }
+        nav ul {
+            margin:8px;
+            padding:0%;
+            list-style: none;
+            display:flex;
+            gap: 80px;
+            color: rgb(255, 178, 127);
+        }
+        nav.before .active-element {
+            transform: rotate(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li class="active"> <button>HOME</button></li>
+                <li> <button>SHOP</button></li>
+                <li><button>ABOUT</button></li>
+                <li> <button>CONTACT</button></li>
+                <li> <button>My Profile</button></li>
+                <li> <button>Login/Signin</button></li>
+            </ul>
+            </nav>
+
+
+    </div>
+</body>
+</html>

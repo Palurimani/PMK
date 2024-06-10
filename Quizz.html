@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz Exam</title>
+    <script>
+        function SubmitAnswer(){
+            const CorrectAnswer = "Amaravati";
+            const userAnswer = document.querySelector("input:checked").value;
+            if (CorrectAnswer === userAnswer){
+                document.getElementById('result').textContent = "correct";
+            }
+                else{
+                document.getElementById('result').textContent = "incorrect";
+                }
+            }   
+            
+        
+    </script>
+</head>
+<body>
+    <h1>Simple Quizz Question:</h1>
+    <div>
+        <p> What is the Capital Of Andhra Pradesh? </p>
+        <input type="radio" name="option" value="Amaravati">
+        <label>Amaravati</label><br>
+        <input type="radio" name="option" value="Vishakapatnam">
+        <label>Vishakapatnam</label><br>
+        <input type="radio" name="option" value="Kurnool">
+        <label>Kurnool</label><br>
+        <button onclick="SubmitAnswer()">Submit</button>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
